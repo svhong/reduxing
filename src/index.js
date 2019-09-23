@@ -10,5 +10,5 @@ ReactDOM.render(
     //import provider and use createstore to access reducers through the provider
     <Provider store={createStore(reducers)}>
         <App />
-    </Provider>
-    , document.getElementById('root'));
+    </Provider>,
+    document.getElementById('root'));
