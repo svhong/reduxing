@@ -1,4 +1,6 @@
+// Refer back to documentation for other named imports on redux
 import { combineReducers } from 'redux';
+// created two reducers that will get called by the action creator
 
 const songsReducer = () => {
     return [
@@ -16,3 +18,10 @@ const selectedSongReducer = (selectedSong = null, action) => {
 
     return selectedSong
 }
+
+
+//combine the reducers as values that will show up in state
+export default combineReducers({
+    songs: songsReducer,
+    selectedSong: selectedSongReducer
+})
